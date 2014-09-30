@@ -136,11 +136,13 @@
             oSettings.oApi._fnDraw(oSettings);
 
             console.info ('A row has been re-ordered...');
-            console.dir (this);
-            $(this).trigger('reordered', {
+            $(oTable).trigger('reordered', {
                 selector: sSelector,
                 current_position: iCurrentPosition,
-                new_position: iNewPosition
+                new_position: iNewPosition,
+                direction: sDirection,
+                id: id,
+                group: sGroup
             });
         }
 
