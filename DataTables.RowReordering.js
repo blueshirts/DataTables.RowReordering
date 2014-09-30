@@ -136,6 +136,7 @@
             oSettings.oApi._fnDraw(oSettings);
 
             console.info ('A row has been re-ordered...');
+            console.dir (this);
             $(this).trigger('reordered', {
                 selector: sSelector,
                 current_position: iCurrentPosition,
