@@ -201,7 +201,7 @@
         }
         oTable.fnDraw();
 
-        $("tbody", oTable).disableSelection().sortable({
+        $("tbody", oTable).sortable({
 cursor: "move",
 helper: tableFixHelper,
 update: function (event, ui) {
