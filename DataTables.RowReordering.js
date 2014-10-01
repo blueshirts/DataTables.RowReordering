@@ -135,7 +135,6 @@
             //draw the 'current' page
             oSettings.oApi._fnDraw(oSettings);
 
-            console.info ('A row has been re-ordered...');
             $(oTable).trigger('reordered', {
                 selector: sSelector,
                 current_position: iCurrentPosition,
